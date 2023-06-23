@@ -1,0 +1,188 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-color: $black-background-color;
+  color: #FFF;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left,
+  &__right {
+    max-width: 49%;
+  }
+
+  &__right {
+    padding-top: 34px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'TTFirsNeue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #CACACA;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  &__mini-title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'TTFirsNeue';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+  }
+
+  &__input {
+    width: 474px;
+    height: 50px;
+    margin-right: 29px;
+    padding-left: 23px;
+    outline: none;
+    border: none;
+    background: #4A4A4A;
+    color: #FFF;
+    transition: outline 0.3s ease;
+  }
+
+  &__input:focus {
+    outline: 1px solid #FF6E30;
+  }
+
+  &__input:hover::placeholder {
+    color: #FF6E30;
+  }
+
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CACACA;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (max-width: 1400px) {
+  .about__form {
+    flex-wrap: wrap;
+  }
+
+  .about__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    padding-bottom: 81px;
+  }
+
+  .about__title {
+    margin-bottom: 3px;
+  }
+
+  .about__input {
+    width: 342px;
+    margin-right: 62px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding-top: 31px;
+    padding-bottom: 63px;
+  }
+
+  .about__title {
+    margin-bottom: 6px;
+  }
+
+  .about__right {
+    max-width: 47.5%;
+  }
+
+  .about__input {
+    margin-right: 0;
+  }
+
+  .about__img {
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__title {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .about__left,
+  .about__right {
+    max-width: 100%;
+  }
+
+  .about__right {
+    padding-top: 23px;
+  }
+
+  .about__descr {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .about__img {
+    margin-bottom: 21px;
+  }
+
+  .about__mini-title {
+    margin-bottom: 14px;
+    font-size: 18px;
+    transform: translateX(-2.5px);
+  }
+
+  .about__form {
+    max-width: 278px;
+  }
+
+  .about__input {
+    height: 40px;
+    max-width: 278px;
+    margin-bottom: 19px;
+    font-size: 14px;
+  }
+
+  .about__input::placeholder {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,167 @@
+.footer {
+  background-color: $black-background-color;
+  color: $white-text-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  &__left,
+  &__center,
+  &__right {
+    width: 29%;
+  }
+
+  &__center {
+    margin-left: -36px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 3px;
+  }
+
+  &__copy {
+    margin: 0;
+    font-family: 'TTFirsNeue';
+    font-weight: 400;
+    font-size: 14px;
+    color: #E9E9E9;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACA;
+  }
+
+  &__right-text {
+    padding: 0;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+  }
+
+  &__link {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__link:focus-visible &__icon path {
+    fill: $focus-color
+  }
+
+  &__link:hover &__icon path {
+    fill: #FF6E30
+  }
+
+  &__link:active &__icon path {
+    fill: $active-color
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__icon path {
+    transition: fill 0.3s ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__logo {
+    width: 166px;
+  }
+
+  .footer__left {
+    width: 39%;
+  }
+
+  .footer__right {
+    width: 26%;
+  }
+
+  .footer__center {
+    width: 39%;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__container {
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    padding-top: 6px;
+    margin-bottom: 4px;
+  }
+
+  .footer__center {
+    display: none;
+  }
+
+  .footer__left {
+    width: 45%;
+  }
+
+  .footer__right {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+
+
+  .footer__right,
+  .footer__left {
+    width: 100%;
+  }
+
+  .footer__right {
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    background: #4A4A4A;
+  }
+
+  .footer__logo {
+    padding-top: 3px;
+    width: 111.55px;
+  }
+
+  .footer__copy {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
